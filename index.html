@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thibo IT Wachtwoordbeheer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Gebruikersnaam">
+        <input type="password" id="password" placeholder="Wachtwoord">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="app" style="display:none;">
+        <div class="header">
+            <button id="logout-button" onclick="logout()">Uitloggen</button>
+        </div>
+        <h2>Wachtwoordbeheer</h2>
+        <input type="text" id="website" placeholder="Website">
+        <input type="text" id="user" placeholder="Gebruikersnaam">
+        <input type="password" id="pass" placeholder="Wachtwoord">
+        <button onclick="addPassword()">Toevoegen</button>
+
+        <h3>Opgeslagen Wachtwoorden</h3>
+        <input type="text" id="search" placeholder="Zoeken..." oninput="searchPasswords()">
+        <ul id="password-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
